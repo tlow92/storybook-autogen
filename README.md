@@ -3,7 +3,7 @@
 Automatically generates stories for Storybook
 
 
-### Getting started
+## Getting started
 
 1. Install package 
 
@@ -35,7 +35,7 @@ storybook-autogen path=./src/components
 ```
 
 
-### Run example
+## Run example
 
 1. Clone repository
 ```
@@ -53,7 +53,7 @@ npm run storybook
 ```
 
 
-### Improvements
+## Improvements
 - [ ] Support passing regex instead of folder path
 - [ ] Support config for:
   - [ ] path to folder/regex
