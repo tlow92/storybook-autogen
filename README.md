@@ -1,6 +1,6 @@
 # Automatic story generation
 
-Automatically generates stories for Storybook
+Automatically generates stories for [Storybook](https://storybook.js.org/)
 
 
 ## Getting started
@@ -11,7 +11,7 @@ Automatically generates stories for Storybook
 npm i storybook-autogen
 ```
 
-2. Add JSDoc tag for possible values
+2. Add [JSDoc](https://jsdoc.app/) tag for possible values
 ```
 /**
   * Button contents
@@ -19,6 +19,7 @@ npm i storybook-autogen
   */
 label: string;
 ```
+e.g. [example/src/components/Button.tsx](https://github.com/tlow92/storybook-autogen/blob/main/example/src/components/Button.tsx#L14)
 Code generation will create combinations of values for different props to generate stories.
 
 3. Run story generation
@@ -33,6 +34,7 @@ storybook-autogen path=./src/components
 "storybook": "storybook-autogen path=./src/components && storybook dev -p 6006",
 "build-storybook": "storybook-autogen path=./src/components && storybook build"
 ```
+e.g. [example/package.json](https://github.com/tlow92/storybook-autogen/blob/main/example/package.json#L11)
 
 
 ## Run example
