@@ -2,6 +2,7 @@
 
 Automatically generates stories for [Storybook](https://storybook.js.org/)
 
+![Demo](assets/demo-preview.gif)
 
 ## Getting started
 
