@@ -2,3 +2,5 @@
 
 # Build files
 /dist
+
+.env

@@ -1,6 +1,6 @@
 {
   "name": "storybook-autogen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatic story generation for storybook",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -9,16 +9,22 @@
     "storybook-autogen": "./dist/index.js"
   },
   "files": [
-    "dist"
+    "dist/**/*",
+    "README.md"
   ],
   "devDependencies": {
     "@types/node": "^20.11.16",
+    "auto": "^11.0.4",
     "react-docgen-typescript": "^2.2.2",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "scripts": {
+    "clean": "rimraf ./dist",
+    "prebuild": "npm run clean",
     "build": "tsup",
+    "build:watch": "npm run build -- --watch",
+    "release": "npm run build && auto shipit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
