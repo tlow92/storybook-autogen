@@ -1,0 +1,32 @@
+{
+  "name": "storybook-autogen",
+  "version": "1.0.0",
+  "description": "Automatic story generation for storybook",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "storybook-autogen": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Thilo Reiner",
+    "email": "thilo.reiner@gmail.com",
+    "url": "https://github.com/tlow92"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlow92/storybook-autogen.git"
+  },
+  "license": "MIT"
+}
