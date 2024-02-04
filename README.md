@@ -56,10 +56,10 @@ npm run storybook
 ### Improvements
 - [ ] Support passing regex instead of folder path
 - [ ] Support config for:
-  - path to folder/regex
-  - overwrite/update option
-  - generate stories for optional props
-  - toggle/modify combination of props
+  - [ ] path to folder/regex
+  - [ ] overwrite/update option
+  - [ ] generate stories for optional props
+  - [ ] toggle/modify combination of props
 - [ ] Convert to storybook addon (Needs investigation)
 - [ ] Generate values without need for JSDoc tags
   - Maybe generate parameters using fakerjs 
