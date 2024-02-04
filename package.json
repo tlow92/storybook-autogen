@@ -1,6 +1,6 @@
 {
   "name": "storybook-autogen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatic story generation for storybook",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
