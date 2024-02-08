@@ -1,3 +1,15 @@
+# v1.0.5 (Thu Feb 08 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: dont overwrite stories by default ([@tlow92](https://github.com/tlow92))
+
+#### Authors: 1
+
+- Thilo ([@tlow92](https://github.com/tlow92))
+
+---
+
 # v1.0.3 (Sun Feb 04 2024)
 
 #### ⚠️ Pushed to `main`
