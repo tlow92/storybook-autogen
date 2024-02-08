@@ -51,7 +51,7 @@ git clone git@github.com:tlow92/storybook-autogen.git
 cd example && npm install
 ```
 
-3. Run storybook
+3. Run storybook script (includes generation step)
 ```
 npm run storybook
 ```
