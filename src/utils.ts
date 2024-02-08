@@ -4,14 +4,23 @@ import * as docgen from "react-docgen-typescript"
 export type PropValues = Record<string, Array<any>>
 export type GeneratedArgs = Record<string, any>
 
+function getStoriesPath(componentPath: string) {
+  return componentPath.replace('.tsx', '.stories.ts')
+}
+
 export function getTsxFiles(folder: string) {
-  return fs.readdirSync(folder).filter(_ => _.includes('Button.tsx')).map(filename => {
+  return fs.readdirSync(folder)
+  .map(filename => {
     return `${folder}/${filename}`
+  })
+  .filter(_ => _.includes('.tsx'))
+  .filter(_ => {
+    return !fs.existsSync(getStoriesPath(_))
   })
 }
 
 export function createStory(componentDoc: docgen.ComponentDoc, stories: string) {
-  fs.writeFileSync(componentDoc.filePath.replace('.tsx', '.stories.ts'), `
+  fs.writeFileSync(getStoriesPath(componentDoc.filePath), `
   import type { Meta, StoryObj } from '@storybook/react';
   import { ${componentDoc.displayName} } from './${componentDoc.displayName}';
 
