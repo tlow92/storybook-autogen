@@ -1,6 +1,7 @@
 # Automatic story generation
 
 Automatically generates stories for [Storybook](https://storybook.js.org/)
+###### Simply add a single line JSDoc annotation in your React component prop to create one or multiple stories 
 
 ![Demo](assets/demo-preview.gif)
 
