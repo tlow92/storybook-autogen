@@ -57,7 +57,7 @@ npm run storybook
 ```
 
 
-## Improvements
+## Roadmap
 - [ ] Support passing regex instead of folder path
 - [ ] Support config for:
   - [ ] path to folder/regex
